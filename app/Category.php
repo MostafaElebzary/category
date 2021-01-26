@@ -10,10 +10,10 @@ class Category extends Model
         'name', 'category_id',
     ];
 
-//    public function categories()
-//    {
-//        return $this->hasOne(Category::class);
-//    }
+    protected $hidden =[
+        'created_at' , 'updated_at'
+    ];
+ 
 
     public function childrenCategories()
     {
